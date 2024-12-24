@@ -37,7 +37,21 @@ local usernames = {
     "ColeHunter_1",
     "LiamBlackwood_1",
     "WolfeZander_1",
-    "StriderVince_1"
+    "ricktroi0",
+    "Narutoviip1",
+    "kakarott811",
+    "jonydang223",
+    "devkoi_9",
+    "VengefulHero0",
+    "NeonSpecter_vip",
+    "LunarPhantom88",
+    "VoidStryker1",
+    "NightViper77",
+    "PhantomEclipse2",
+    "ArcaneHunterr",
+    "FrozenWraith_o",
+    "ShadowDragoon_2",
+    "CrimsonPhoenix_top"
 }
 
 local function getRandomUsername()
