@@ -65,7 +65,7 @@ local usernames = {
     "RenjiAkuma_top",
     "SoraKage8",
     "HayatoRyu1u0",
-    "VortexNova03",
+    "VortexNova03"
 }
 
 local function getRandomUsername()
