@@ -127,7 +127,7 @@ getgenv().Settings = {
         Active = true,
 
         Items = {	
-			["Heartbreak Egg"] = {Class = "Egg", Price = "5%"},
+			["Heartbreak Egg"] = {Class = "Egg", Price = "5%", Amount = 5000},
 			["Cupids Egg"] = {Class = "Egg", Price = "5%"},
 			["Magma Egg"] = {Class = "Egg", Price = "5%"},
 			["Holiday Egg"] = {Class = "Egg", Price = "5%"},
@@ -152,12 +152,13 @@ getgenv().Settings = {
 			["Celestial Mining Chest"] = {Class = "Lootbox", Price = "5%"},
 			["Runic Mining Chest"] = {Class = "Lootbox", Price = "5%"},
 			["Legendary Mining Chest"] = {Class = "Lootbox", Price = "5%"},
+			["Valentines Spinny Wheel Ticket"] = {Class = "Misc", Price = "5%"},
 			["Diamond Fishing Rod"] = {Class = "Misc", Price = "5%"},
 			["Frozen Fishing Rod"] = {Class = "Misc", Price = "5%"},
 			["Corrupted Fishing Rod"] = {Class = "Misc", Price = "5%"},
 			["Crystal Key"] = {Class = "Misc", Price = "5%"},
-			["Crystal Key Upper Half"] = {Class = "Misc", Price = "5%"},
-			["Crystal Key Lower Half"] = {Class = "Misc", Price = "5%"},
+			["Crystal Key Upper Half"] = {Class = "Misc", Price = "5%", Amount = 5000},
+			["Crystal Key Lower Half"] = {Class = "Misc", Price = "5%", Amount = 5000},
 			["Exclusive Treasure Chest"] = {Class = "Lootbox", Price = "5%"},
 			["Magma Scroll 1"] = {Class = "Consumable", Price = "5%"},
 			["Metal Detector 1"] = {Class = "Consumable", Price = "5%"},
@@ -344,4 +345,4 @@ while true do
 	wait(1)
 end
 
-end   
+end
