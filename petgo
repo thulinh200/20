@@ -130,6 +130,8 @@ getgenv().Settings = {
         Active = true,
 
         Items = {	
+			["10,000x Thieving Egg"] = {Class = "Egg", Price = "5%", Amount = 5000},
+			["100x Thieving Egg"] = {Class = "Egg", Price = "5%", Amount = 5000},
 			["Heartbreak Egg"] = {Class = "Egg", Price = "5%", Amount = 5000},
 			["Cupids Egg"] = {Class = "Egg", Price = "5%"},
 			["Magma Egg"] = {Class = "Egg", Price = "5%"},
@@ -140,6 +142,9 @@ getgenv().Settings = {
 			["Nice Egg"] = {Class = "Egg", Price = "5%"},
 			["Winter Egg"] = {Class = "Egg", Price = "5%"},
 			["Huge Egg"] = {Class = "Egg", Price = "5%"},
+			["Thieving Present"] = {Class = "Lootbox", Price = "5%"},
+			["Exotic Thieving Chest"] = {Class = "Lootbox", Price = "5%"},
+			["Legendary Thieving Chest"] = {Class = "Lootbox", Price = "5%"},
 			["Heartbreak Present"] = {Class = "Lootbox", Price = "5%"},
 			["Valentines Present"] = {Class = "Lootbox", Price = "5%"},
 			["Tech Gift"] = {Class = "Lootbox", Price = "5%"},
@@ -163,6 +168,9 @@ getgenv().Settings = {
 			["Crystal Key Upper Half"] = {Class = "Misc", Price = "5%", Amount = 5000},
 			["Crystal Key Lower Half"] = {Class = "Misc", Price = "5%", Amount = 5000},
 			["Exclusive Treasure Chest"] = {Class = "Lootbox", Price = "5%"},
+			["Thieving Luck Scroll 1"] = {Class = "Consumable", Price = "5%"},
+			["Thieving Speed Scroll 1"] = {Class = "Consumable", Price = "5%"},
+			["Thieving Success Scroll 1"] = {Class = "Consumable", Price = "5%"},
 			["Magma Scroll 1"] = {Class = "Consumable", Price = "5%"},
 			["Metal Detector 1"] = {Class = "Consumable", Price = "5%"},
 			["Ice Fishing Scroll 1"] = {Class = "Consumable", Price = "5%"},
@@ -171,6 +179,7 @@ getgenv().Settings = {
 			["Fishing Bait 5"] = {Class = "Consumable", Price = "5%"},
 			["Corrupted Huge Bait 1"] = {Class = "Consumable", Price = "5%"},
 			["Fishing Bait 4"] = {Class = "Consumable", Price = "5%"},
+			["Thieving God Potion 1"] = {Class = "Consumable", Price = "6%"},
 			["Heartbreak God Potion 1"] = {Class = "Consumable", Price = "6%"},
 			["Valentines God Potion 1"] = {Class = "Consumable", Price = "6%"},
 			["Holiday God Potion 1"] = {Class = "Consumable", Price = "6%"},
@@ -181,8 +190,8 @@ getgenv().Settings = {
 			["Instant Luck Potion 4"] = {Class = "Consumable", Price = "5%"},
 			["All Rarity: Exclusive"] = {Class = "Pet", Price = "3%", AllTypes = true},
 			["All Rarity: Secret"] = {Class = "Pet", Price = "3%"},
-			["All Rarity: Celestial"] = {Class = "Pet", Price = "3%"}
-
+			["All Rarity: Celestial"] = {Class = "Pet", Price = "3%"},
+			["All Rarity: Superior"] = {Class = "Pet", Price = "3%"},
 
         },
 
