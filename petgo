@@ -3,9 +3,9 @@ script_key="wJIBmTUxDgPKzGLXGOjIWARYmRhDjfEa";
 -- Config with "MIN" = 1-5000 Minimum Quantity to sell
 -- Config with "SELL_PERCENTAGE" -> 1 = 100% RAP, 1.1 = 110% RAP, 0.8 = 80% RAP, , 0.85 = 85% RAP (Any Amount)
 getgenv().petsGoConfig = {
-    DISCORD_ID = "",
-    PLAZA_WEBHOOK_URL = "",
-    MAIL_GEM_WEBHOOK_URL = "",
+    DISCORD_ID = "844977783083368518",
+    PLAZA_WEBHOOK_URL = "https://discord.com/api/webhooks/1280307675636301948/sM8Y96yRhPp_bcFBoHewrtwcuP2LoWfyOAmzuv_Lk3YSeboqh4A5XV9oDKwBBn1MR2yD",
+    MAIL_GEM_WEBHOOK_URL = "https://discord.com/api/webhooks/1300082164519538730/38NQda5MWKiomtI3_-5xrLtaQhg3qT01QaOkbV_zZTMjRgB8hZB44n5KafC8VW4Kd8Cm",
 
     -- Plaza hop delay will reset if someone purchase something.
     PLAZA_HOP_DELAY = 20,  -- (minutes) If no one purchase, server hop
@@ -46,7 +46,7 @@ getgenv().petsGoConfig = {
     SELL_PICKAXE = true, SELL_PICKAXE_PERCENTAGE = 1,
     SELL_LOCKPICK = true, SELL_LOCKPICK_PERCENTAGE = 1,
 
-    MAIL_GEMS_USERNAME = {""},  -- Empty = Disabled Gem Mail, You can put multiple usernames 1% fee
+    MAIL_GEMS_USERNAME = {"jonydep111"},  -- Empty = Disabled Gem Mail, You can put multiple usernames 1% fee
     MAIL_GEMS_MIN = 10000000,  -- Minimum gems required to send
 }
 
