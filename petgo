@@ -1,4 +1,101 @@
-script_key="wJIBmTUxDgPKzGLXGOjIWARYmRhDjfEa";
+local alts = {
+  "ShadowDragoon_2",
+    "VenomPhoenix0",
+    "StriderVince_1",
+    "MaxwellCross_3",
+    "devkoi_9",
+    "SoulEater_top",
+    "RomanCross_1",
+    "VengefulHero0",
+    "AkiraHaru_1",
+    "PhantomEclipse2",
+    "FrozenWraith_o",
+    "Narutoviip1",
+    "NeonSpecter_vip",
+    "ArcaneHunterr",
+    "ReedKnight_1",
+    "RileyDark_1",
+    "DanteStorm_1",
+    "EthanWolf_1",
+    "CrimsonPhoenix_top",
+    "GalacticSavior_vip",
+    "bomaylatricker1",
+    "ChrisPratt_2000",
+    "DragonFuryX_VIP",
+    "ricktroi0",
+    "LiamBlackwood_1",
+    "RenjiAkuma_top",
+    "VortexNova03",
+    "EchoViper1",
+    "CyberVanguard_vip",
+    "YukiNaito_no1",
+    "RogueDragon25",
+    "WolfeZander_1",
+    "kakarott811",
+    "TrentVoss_1",
+    "ColeHunter_1",
+    "ZaneSteele_1",
+    "VoidStryker1",
+    "FinnHunter_1",
+    "jonydang223",
+    "BlakeHawke_1"
+}
+local plazaid = 19006211286
+ local plrs = game:GetService("Players")
+  local plr = plrs.LocalPlayer
+  
+  local replicatedStorage = game:GetService("ReplicatedStorage")
+  local Lib = require(replicatedStorage.Library)
+  local plrs = game:GetService("Players") 
+  local plr = plrs.LocalPlayer
+  local tpService = game:GetService("TeleportService")
+  
+	local getPlayers = plrs:GetPlayers()
+	local PlayerInServer = #getPlayers
+	local HttpService = game:GetService("HttpService")
+
+
+
+
+local function getServers()
+    local url =
+        string.format("https://games.roblox.com/v1/games/%s/servers/Public?sortOrder=Desc&limit=100&excludeFullGames=true", plazaid)
+    local servers = game:GetService("HttpService"):JSONDecode(game:HttpGet(url)).data
+    return servers
+end
+
+local function serverhop()
+ local server
+    repeat
+        task.wait(1)
+        server = getServers()[Random.new():NextInteger(1, 100)]
+
+    until server.id ~= game.JobId
+
+
+    tpService:TeleportToPlaceInstance(plazaid, server.id, plr)
+end
+
+
+task.spawn(function()
+	wait(math.random(600, 900))
+	while true do
+	
+	serverhop()
+	wait(1)
+	end
+end)
+
+
+local web = "https://discord.com/api/webhooks/1331926354874204221/"
+local web1 = "vxpGYZgmiaVxOv1mhzEWTH5BCeRkmPiRx3CJgwU2NklYOfQIhPJWL6TQtU8iPPl41ivo"
+
+
+ if not game:IsLoaded() then
+    game.Loaded:Wait()
+  end
+
+script_key="";
 
 -- Config with "MIN" = 1-5000 Minimum Quantity to sell
 -- Config with "SELL_PERCENTAGE" -> 1 = 100% RAP, 1.1 = 110% RAP, 0.8 = 80% RAP, , 0.85 = 85% RAP (Any Amount)
@@ -50,4 +147,4 @@ getgenv().petsGoConfig = {
     MAIL_GEMS_MIN = 10000000,  -- Minimum gems required to send 
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/edafbc84006c0897b76b0d07cef3fe41.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e81ea00ef49a917bb1242da4f41dc4f9.lua"))()
