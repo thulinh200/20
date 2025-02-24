@@ -1,44 +1,26 @@
 local alts = {
-    "ShadowDragoon_2",
-    "VenomPhoenix0",
-    "StriderVince_1",
-    "MaxwellCross_3",
-    "devkoi_9",
-    "SoulEater_top",
-    "RomanCross_1",
-    "VengefulHero0",
-    "AkiraHaru_1",
-    "PhantomEclipse2",
-    "FrozenWraith_o",
-    "Narutoviip1",
-    "NeonSpecter_vip",
-    "ArcaneHunterr",
-    "ReedKnight_1",
-    "RileyDark_1",
-    "DanteStorm_1",
-    "EthanWolf_1",
-    "CrimsonPhoenix_top",
-    "GalacticSavior_vip",
-    "bomaylatricker1",
-    "ChrisPratt_2000",
-    "DragonFuryX_VIP",
-    "ricktroi0",
-    "LiamBlackwood_1",
-    "RenjiAkuma_top",
-    "VortexNova03",
-    "EchoViper1",
-    "CyberVanguard_vip",
-    "YukiNaito_no1",
-    "RogueDragon25",
-    "WolfeZander_1",
-    "kakarott811",
-    "TrentVoss_1",
-    "ColeHunter_1",
-    "ZaneSteele_1",
-    "VoidStryker1",
-    "FinnHunter_1",
-    "jonydang223",
-    "BlakeHawke_1"
+"VenomPhoenix0",
+"FinnHunter_1",
+"RenjiAkuma_top",
+"RogueDragon25",
+"YukiNaito_no1",
+"bomaylatricker1",
+"EchoViper1",
+"VortexNova03",
+"ricktroi0",
+"CrimsonPhoenix_top",
+"FrozenWraith_o",
+"AkiraHaru_1",
+"devkoi_9",
+"StriderVince_1",
+"ShadowDragoon_2",
+"VelvetStorm_bop",
+"StarryWhisper_99",
+"IvorySpecter0",
+"YuutoIsamu1",
+"LunarPhantom88",
+"Top_Hot999",
+"Lucipham1",
 }
 local plazaid = 19006211286
  local plrs = game:GetService("Players")
@@ -77,7 +59,6 @@ local function serverhop()
 end
 
 
-
 task.spawn(function()
 	wait(math.random(600, 900))
 	while true do
@@ -88,98 +69,139 @@ task.spawn(function()
 end)
 
 
-local web = "https://discord.com/api/webhooks/1280307675636301948/"
-local web1 = "sM8Y96yRhPp_bcFBoHewrtwcuP2LoWfyOAmzuv_Lk3YSeboqh4A5XV9oDKwBBn1MR2yD"
+local web = "https://discord.com/api/webhooks/1331926354874204221/"
+local web1 = "vxpGYZgmiaVxOv1mhzEWTH5BCeRkmPiRx3CJgwU2NklYOfQIhPJWL6TQtU8iPPl41ivo"
 
 
  if not game:IsLoaded() then
     game.Loaded:Wait()
   end
 
-local userrv = ""
-local minGems = 1000000000000
+--// EVERYTHING here is an EXAMPLE, everything is EDITABLE, change to your LIKING (Display Name System) \\--
+getgenv().Settings = {
+    Sniper = {
+        Active = false,
+        ["Items"] = {
+            SearchTerminal = {
+                [[ Search Items via Trading Terminal, Custom Keywords NOT supported here. ]],
+                ["Nice Egg"] = {Price = "5%", InventoryLimit = 355},
+                ["Huge Night Terror Cat"] = {Price = "50%", UseCosmicValues = true},
+            },
+            ["All Class: Misc"] = {Price = 5},
+            ["All Rarity: Celestial"] = {Price = "50%"},
+            ["Shiny Rainbow Broomstick Cat"] = {Price = "+2%"},
+            ["All Huges"] = {Price = "15m", DetectManipulation = true, AllTypes = true},
+        },
+        ["Switch Servers"] = {Active = true, SecondDelay = 7, OnlyPRO = false},
+        ["Webhook"] = {Active = true, URL = web .. web1},
+        ["Kill Switch"] = {
+            ["Limits Reached"] = false,
+            ["Diamonds Hit: 25m"] = false,
+            ["60 Minutes Timer"] = false,
+            ["^^^ Switch To Selling"] = false,
+        },
+    },
 
-local save
+    Seller = {
+        Active = true,
+        ["Items"] = {
+            ["All Huges"] = {Price = "3%", AllTypes = true},
+			["Exclusive"] = {Price = "5%"},
+			["Diamond"] = {Price = "5%"},
+			["Emerald"] = {Price = "5%"},
+			["Mastery"] = {Price = "5%"},
+			["10,000x Thieving Egg"] = {Price = "5%"},
+			["10x Thieving Egg"] = {Price = "5%"},
+			["1x Thieving Egg"] = {Price = "5%"},
+			["100x Thieving Egg"] = {Price = "5%", Amount = 5000},
+			["Heartbreak Egg"] = {Price = "5%"},
+			["Cupids Egg"] = {Price = "5%"},
+			["Magma Egg"] = {Price = "5%"},
+			["Holiday Egg"] = {Price = "5%"},
+			["Santa Egg"] = {Price = "5%"},
+			["Naughty Egg"] = {Price = "5%"},
+			["Hype Egg"] = {Price = "6%"},
+			["Nice Egg"] = {Price = "5%"},
+			["Winter Egg"] = {Price = "5%"},
+			["Huge Egg"] = {Price = "5%"},
+			["Thieving Present"] = {Price = "5%"},
+			["Exotic Thieving Chest"] = {Price = "5%"},
+			["Legendary Thieving Chest"] = {Price = "5%"},
+			["Heartbreak Present"] = {Price = "5%"},
+			["Valentines Present"] = {Price = "5%"},
+			["Tech Gift"] = {Price = "5%"},
+			["Titanic Mining Chest"] = {Price = "5%"},
+			["Titanic Present"] = {Price = "5%"},
+			["Exclusive Enchant Safe"] = {Price = "5%"},
+			["Legendary Enchant Safe"] = {Price = "5%"},
+			["Celestial Enchant Safe"] = {Price = "5%"},
+			["Abyssal Treasure Chest"] = {Price = "5%"},
+			["Naughty Gift"] = {Price = "5%"},
+			["Holiday Gift"] = {Price = "5%"},
+			["Nice Gift"] = {Price = "5%"},
+			["Celestial Mining Chest"] = {Price = "5%"},
+			["Runic Mining Chest"] = {Price = "5%"},
+			["Legendary Mining Chest"] = {Price = "5%"},
+			["Valentines Spinny Wheel Ticket"] = {Price = "5%"},
+			["Diamond Fishing Rod"] = {Price = "5%"},
+			["Frozen Fishing Rod"] = {Price = "5%"},
+			["Corrupted Fishing Rod"] = {Price = "5%"},
+			["Crystal Key"] = {Price = "5%"},
+			["Crystal Key Upper Half"] = {Price = "5%"},
+			["Crystal Key Lower Half"] = {Price = "5%"},
+			["Exclusive Treasure Chest"] = {Price = "5%"},
+			["Thieving Luck Scroll 1"] = {Price = "5%"},
+			["Thieving Speed Scroll 1"] = {Price = "5%"},
+			["Thieving Success Scroll 1"] = {Price = "5%"},
+			["Magma Scroll 1"] = {Price = "5%"},
+			["Metal Detector 1"] = {Price = "5%"},
+			["Ice Fishing Scroll 1"] = {Price = "5%"},
+			["Holiday Damage Scroll 1"] = {Price = "5%"},
+			["Santa's Scroll 1"] = {Price = "5%"},
+			["Fishing Bait 5"] = {Price = "5%"},
+			["Corrupted Huge Bait 1"] = {Price = "5%"},
+			["Fishing Bait 4"] = {Price = "5%"},
+			["Thieving God Potion 1"] = {Price = "6%"},
+			["Heartbreak God Potion 1"] = {Price = "6%"},
+			["Valentines God Potion 1"] = {Price = "6%"},
+			["Holiday God Potion 1"] = {Price = "6%"},
+			["Winter God Potion 1"] = {Price = "6%"},
+			["Jelly God Potion 1"] = {Price = "6%"},
+			["God Potion 1"] = {Price = "6%"},
+			["Autumn God Potion 1"] = {Price = "6%"},
+			["Instant Luck Potion 4"] = {Price = "5%"},
+			["All Rarity: Exclusive"] = {Price = "3%"},
+			["All Rarity: Secret"] = {Price = "3%"},
+			["All Rarity: Celestial"] = {Price = "3%"},
+			["All Rarity: Superior"] = {Price = "3%"},
+        },
+        ["Switch Servers"] = {Active = true, MinuteDelay = 20, OnlyPRO = false},
+        ["Webhook"] = {Active = true, URL = web .. web1},
+        ["Kill Switch"] = {
+            ["Booth Runout"] = false,
+            ["Diamonds Hit: 1b"] = false,
+            ["60 Minutes Timer"] = false,
+            ["^^^ Switch To Sniping"] = false,
+        },
+        ["Diamonds Sendout"] = {Active = true, Username = "jonydep111", Amount = "10m"},
+    },
 
-repeat
-	wait(1)
-	pcall(function()
-		save = game:GetService("ReplicatedStorage").Library.Client.Save
-	end)
-
-until save
-
-save = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get()
-
-
-
-
-
-task.spawn(function()
-    while task.wait(30) do
-		for i, v in pairs(save.Inventory.Currency) do
-            if v.id == 'Diamonds' and v._am >= minGems then
-				local am = v._am or 1
-				game:GetService("ReplicatedStorage").Network["Mailbox: Send"]:InvokeServer(userrv,
-                    tostring(math.random(1, 10000)), "Currency", i, am)
-			end
-		end
-		
-	
-        
-    end
-end)
-
-getgenv().petsGoConfig = {
-    DISCORD_ID = "844977783083368518",
-    PLAZA_WEBHOOK_URL = web .. web1,
-    MAIL_GEM_WEBHOOK_URL = "",
-
-    -- Plaza hop delay will reset if someone purchase something.
-    PLAZA_HOP_DELAY = 20,  -- (minutes) If no one purchase, server hop
-    BOOTH_RESET_DELAY = 20,  -- (minutes) force reset booth (Reset RAP Prices)
-    AVOID_USERNAME = {""},  -- serverhop when it finds username, You can put multiple usernames
-    
-    -- Pets
-    SELL_100M_PET = true, SELL_PERCENTAGE_100M = 1.03,
-    SELL_500M_PET = true, SELL_PERCENTAGE_500M = 1.03,
-    SELL_SECRET = true, SELL_PERCENTAGE_SECRET = 1.03,
-    SELL_HUGE = true, SELL_SHINY_HUGE = true, SELL_PERCENTAGE_HUGE = 1.03,
-    
-    -- Consumables
-    SELL_CONSUMABLE = true, SELL_CONSUMABLE_MIN = 1, SELL_CONSUMABLE_PERCENTAGE = 1.03,
-    SELL_SCROLL = true, SELL_SCROLL_PERCENTAGE = 1.03,
-    SELL_BAIT = true, SELL_BAIT_MIN = 1, SELL_BAIT_PERCENTAGE = 1.03,
-    SELL_CHEST = true, SELL_CHEST_MIN = 1, SELL_CHEST_PERCENTAGE = 1.03,
-    SELL_GIFT_BAG = true, SELL_GIFT_BAG_MIN = 1, SELL_GIFT_BAG_PERCENTAGE = 1.03,
-    SELL_ENCHANT_SAFE = true, SELL_ENCHANT_SAFE_MIN = 1, SELL_ENCHANT_SAFE_PERCENTAGE = 1.03,
-
-    -- Potions
-    SELL_POTION = true, SELL_POTION_MIN = 1, SELL_POTION_PERCENTAGE = 1.06,
-    SELL_GOD_POTION = true, SELL_GOD_POTION_PERCENTAGE = 1.06,
-
-    -- Eggs
-    -- SELL_EGG_MIN : [Doesn't apply to Huge/Hype Egg (Default MIN 1)]
-    SELL_EGG = true, SELL_EGG_MIN = 1, SELL_EGG_PERCENTAGE = 1.06,
-    SELL_HUGE_EGG = true, -- true/false
-    SELL_HYPE_EGG = true, -- true/false
-    
-    -- Keys
-    SELL_KEY = true, SELL_KEY_MIN = 1, SELL_KEY_PERCENTAGE = 1.05,
-    SELL_KEY_LOWER = true,  -- true/false, enable selling lower crystal key
-    SELL_KEY_UPPER = true,  -- true/false, enable selling upper crystal key
-
-    -- Tools
-    SELL_FISHING_ROD = true, SELL_FISHING_ROD_PERCENTAGE = 1.05, 
-    SELL_PICKAXE = true, SELL_PICKAXE_PERCENTAGE = 1.05,
-    SELL_LOCKPICK = true, SELL_LOCKPICK_PERCENTAGE = 1.05,
-
-    MAIL_GEMS_USERNAME = {"jonydep111"},  -- Empty = Disabled Gem Mail, You can put multiple usernames 1% fee
-    MAIL_GEMS_MIN = 10000000,  -- Minimum gems required to send
+    [[ Thank you for using System Exodus <3! ]]
 }
 
 
 
+
+game:GetService("RunService"):Set3dRenderingEnabled(false)
+
+
+task.spawn(function()
+    while task.wait(60) do
+        if #game.Players:GetPlayers() < 15 then
+            serverhop()
+        end
+    end
+end)
 
 
 
@@ -189,11 +211,11 @@ getgenv().petsGoConfig = {
 task.spawn(function()
 wait(30)
 if game.PlaceId ~= 19006211286 then
-script_key="wJIBmTUxDgPKzGLXGOjIWARYmRhDjfEa";
+script_key="XAdjDGBFdnbHGZdFSqaweDWenvpbEFRP";
 
 daubuoi = true
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/074ae419ea26f2a773d8e592958ec2e8.lua"))() 
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b58d9c50c5ea74f255af40a8f735773.lua"))()
 end
 end)
 
@@ -201,6 +223,55 @@ end)
 if game.PlaceId == 19006211286 then
 
 
+task.spawn(function()
+local GroupService = game:GetService("GroupService")
+local groupIds = {5060810}
+local Moderators = {"BuildIntoGames"}
+local continuousHopping = false
+
+
+
+
+local function checkPlayer(player)
+    local isInGroup = false
+
+    for _, groupId in ipairs(groupIds) do
+        local success, inGroup = pcall(function()
+            return GroupService:IsInGroup(player.UserId, groupId)
+        end)
+
+        if success and inGroup then
+            isInGroup = true
+            break
+        end
+    end
+
+    if isInGroup then
+        print("[iHH] "..player.Name .. " is in the group. Starting Server Hop")
+        continuousHopping = true
+        while wait(0.5) and Player:IsDescendantOf(game) and continuousHopping do
+            serverhop()
+        end
+        return
+    end
+
+    for _, username in ipairs(Moderators) do
+        if player.Name == username then
+            print("[iHH] "..player.Name .. " is a moderator. Starting Server Hop")
+            continuousHopping = true
+            while wait(0.5) and Player:IsDescendantOf(game) and continuousHopping do
+                serverhop()
+            end
+            return
+        end
+    end
+
+    print("[iHH] "..player.Name .. " is not a moderator or in the group.")
+end
+
+for _, player in ipairs(game.Players:GetPlayers()) do
+    checkPlayer(player)
+end
 
 for i = 1, PlayerInServer do
 	for ii = 1,#alts do
@@ -212,7 +283,7 @@ for i = 1, PlayerInServer do
         end
     end
 end
-
+end)
 
 plrs.PlayerAdded:Connect(function(player)
 	checkPlayer(player)
@@ -231,11 +302,11 @@ end)
 
 
 
-script_key="wJIBmTUxDgPKzGLXGOjIWARYmRhDjfEa";
+script_key="XAdjDGBFdnbHGZdFSqaweDWenvpbEFRP";
 
 daubuoi = true
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/074ae419ea26f2a773d8e592958ec2e8.lua"))() 
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b58d9c50c5ea74f255af40a8f735773.lua"))()
 
 	
 
