@@ -1,27 +1,38 @@
 local alts = {
-local alts = {
-"VenomPhoenix0",
-"FinnHunter_1",
-"RenjiAkuma_top",
-"RogueDragon25",
-"YukiNaito_no1",
-"bomaylatricker1",
-"EchoViper1",
-"VortexNova03",
-"ricktroi0",
-"CrimsonPhoenix_top",
-"FrozenWraith_o",
-"AkiraHaru_1",
-"devkoi_9",
-"StriderVince_1",
-"ShadowDragoon_2",
-"VelvetStorm_bop",
-"StarryWhisper_99",
-"IvorySpecter0",
-"YuutoIsamu1",
-"LunarPhantom88",
-"Top_Hot999",
-"Lucipham1",
+"ohtoahoah1866",
+"epgisabellamasw4851",
+"pyziaia2323",
+"ciyzelenalena4520",
+"utaoeoe272",
+"huaalebaleb3912",
+"zgwharlesharles11541",
+"rtdilliamiiam4894",
+"xvdduileyiley8146",
+"iclatthewatthew4256",
+"jcxulianulian23",
+"gctnhAlicelie6948",
+"bykustinustin1214",
+"zbgharlesharles26",
+"kiugiaronaron1325",
+"nqbgfasonason410",
+"mcpustinustin1042",
+"fpodeyanyan7664",
+"kwwkylarylar2077",
+"rsqamesames1649",
+"wpeanielbin4119",
+"agoideniden255",
+"wznjlanielbin9103",
+"vpkeaheah30",
+"ppuavidavid3201",
+"jzpellaella4660",
+"eytisabellamasw835",
+"lshadieadie4717",
+"ostophieophie1062",
+"yheRubybyy224",
+"huesaacsaac3907",
+"oqwmmamma4728",
+"muvoeoe10533",
+"fsgathanathan1032"
 }
 local plazaid = 19006211286
  local plrs = game:GetService("Players")
@@ -70,7 +81,7 @@ task.spawn(function()
 end)
 
 
-local web = "https://discord.com/api/webhooks/1331926357504036906/"
+local web = "https://discord.com/api/webhooks/1331926357504036906/G_W7OpmlY1PUxDVD4X9tkAfQvj7GUeUixxQN8CHUL7Y8bIxSrJWvT3WwCNXwpp5aq1Wg"
 local web1 = "G_W7OpmlY1PUxDVD4X9tkAfQvj7GUeUixxQN8CHUL7Y8bIxSrJWvT3WwCNXwpp5aq1Wg"
 
 
