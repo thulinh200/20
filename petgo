@@ -1,4 +1,5 @@
 local alts = {
+local alts = {
 "VenomPhoenix0",
 "FinnHunter_1",
 "RenjiAkuma_top",
@@ -69,8 +70,8 @@ task.spawn(function()
 end)
 
 
-local web = "https://discord.com/api/webhooks/1331926354874204221/"
-local web1 = "vxpGYZgmiaVxOv1mhzEWTH5BCeRkmPiRx3CJgwU2NklYOfQIhPJWL6TQtU8iPPl41ivo"
+local web = "https://discord.com/api/webhooks/1331926357504036906/"
+local web1 = "G_W7OpmlY1PUxDVD4X9tkAfQvj7GUeUixxQN8CHUL7Y8bIxSrJWvT3WwCNXwpp5aq1Wg"
 
 
  if not game:IsLoaded() then
@@ -102,9 +103,6 @@ getgenv().Settings = {
         },
     },
 
-    Seller = {
-        Active = true,
-        ["Items"] = {
     Seller = {
         Active = true,
         ["Items"] = {
