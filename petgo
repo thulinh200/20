@@ -64,8 +64,8 @@ task.spawn(function()
 end)
 
 
-local web = "https://discord.com/api/webhooks/1330887810613514351/"
-local web1 = "wGi8sqpGCvKTy0VpXY6M2HdyY2mxr_VsHBDXKjYr2J6y_rsH7uKi656IEppFWw0pkv-Y"
+local web = "https://discord.com/api/webhooks/1331926354874204221/"
+local web1 = "vxpGYZgmiaVxOv1mhzEWTH5BCeRkmPiRx3CJgwU2NklYOfQIhPJWL6TQtU8iPPl41ivo"
 
 
  if not game:IsLoaded() then
