@@ -187,7 +187,7 @@ getgenv().Settings = {
 			["Autumn God Potion"] = {Price = "6%", Amount = 5000},
 			["Instant Luck Potion 4"] = {Price = "5%"},
 			["All Rarity: Exclusive"] = {Price = "3%"},
-			["All Rarity: Secret"] = {Price = "-3%"},
+			["All Rarity: Secret"] = {Price = "1%"},
 			["All Rarity: Celestial"] = {Price = "3%"},
         },
         ["Switch Servers"] = {Active = true, MinuteDelay = 20, OnlyPRO = false},
