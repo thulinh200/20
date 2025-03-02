@@ -112,7 +112,7 @@ getgenv().Settings = {
     Seller = {
         Active = true,
         ["Items"] = {
-            ["All Huges"] = {Price = "3%", AllTypes = true},
+            ["All Huges"] = {Price = "3%", AllTypes = true, Priority = true},
 			["Master Thief Potion"] = {Price = "5%"},
 			["Royal Gift"] = {Price = "5%"},
 			["Hacker Scroll"] = {Price = "5%", Amount = 5000},
