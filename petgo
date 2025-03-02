@@ -184,7 +184,6 @@ getgenv().Settings = {
 			["All Rarity: Exclusive"] = {Price = "3%"},
 			["All Rarity: Secret"] = {Price = "3%"},
 			["All Rarity: Celestial"] = {Price = "3%"},
-			["All Rarity: Superior"] = {Price = "3%"},
         },
         ["Switch Servers"] = {Active = true, MinuteDelay = 20, OnlyPRO = false},
         ["Webhook"] = {Active = true, URL = web .. web1},
