@@ -1,14 +1,12 @@
 local alts = {
 "VenomPhoenix0",
 "IvorySpecter0",
-"MysticSoul68",
-"InfernoWraith4",
+"WCmohVzhZRs",
+"remain91012",
 "YuutoIsamu1",
 "TOwkgesVTig",
-"BerryMariex084",
-"HoodRicardot7920",
-"AveryJamesn3236",
-"ScottJoq603",
+"kermieiacobus86",
+"Jvtdv5910",
 "RenjiAkuma_top",
 "RogueDragon25",
 "YukiNaito_no1",
@@ -22,9 +20,235 @@ local alts = {
 "StriderVince_1",
 "ShadowDragoon_2",
 "StarryWhisper_99",
-"Lucipham1",
+"DownsCharlesh1615",
+"ParkerKittyl381",
+"BurnsFernl5",
+"BlairAshleyw957",
+"RoseJacobn105",
+"EstradaWillowu446",
+"HaasDianeb2578",
+"MannBradleyn5",
+"BullockJakep084",
+"AndrewsArielq49",
+"PotterZacharya69",
+"PrestonJackiem1",
+"KeithMckenzieh14",
+"FletcherSelenag8376",
+"NealJacquelineh5",
+"ChavezOscard329",
+"DeepAlejandron385",
+"McgeeShelleyu43",
+"EspinozaLeonardv00",
 
 }
+
+local phrases = {
+"Happy Birthday",
+"Good Luck",
+"Thank You",
+"Stay Strong",
+"Well Done",
+"Merry Christmas",
+"Best Wishes",
+"Take Care",
+"Sweet Dreams",
+"Much Love",
+"Enjoy Life",
+"Live Well",
+"Keep Smiling",
+"Dream Big",
+"Shine Bright",
+"Stay Happy",
+"Feel Better",
+"Bon Voyage",
+"Safe Travels",
+"Be Yourself",
+"Love Always",
+"Never Give Up",
+"Be Kind",
+"Think Positive",
+"You Rock",
+"Have Fun",
+"Follow Me",
+"Trust Yourself",
+"Stay Positive",
+"Believe More",
+"Enjoy Today",
+"Make Memories",
+"Have Courage",
+"Stay Calm",
+"Love Forever",
+"Keep Going",
+"Do Good",
+"Try Again",
+"Think Big",
+"Speak Kindly",
+"Be Humble",
+"Always Smile",
+"Laugh Often",
+"Stay Blessed",
+"Enjoy Everything",
+"Cherish Moments",
+"Be Honest",
+"Take Action",
+"Move Forward",
+"Stay Focused",
+"Show Gratitude",
+"Dream More",
+"Love Deeply",
+"Find Joy",
+"Spread Love",
+"Happiness Matters",
+"Respect Everyone",
+"Explore More",
+"Stay True",
+"Live Freely",
+"Help Others",
+"Lead Well",
+"Enjoy Learning",
+"Be Creative",
+"Feel Inspired",
+"Love Yourself",
+"Appreciate Life",
+"Make Changes",
+"Focus Now",
+"Grow Stronger",
+"Trust The Process",
+"See Beauty",
+"Be Fearless",
+"Stay Motivated",
+"Learn Daily",
+"Practice Kindness",
+"Never Settle",
+"Make Impact",
+"Speak Truth",
+"Take Risks",
+"Celebrate Life",
+"Discover Yourself",
+"Chase Dreams",
+"Inspire Others",
+"Help Someone",
+"Work Hard",
+"Be Thankful",
+"Live Today",
+"Enjoy Freedom",
+"Stay Cool",
+"Keep Trying",
+"Smile More",
+"Stay Gold",
+"Have Patience",
+"Act Now",
+"Create Happiness",
+"Embrace Change",
+"Let Go",
+"Stay Balanced",
+"Listen Well",
+"Give Back",
+"Forgive Others",
+"Do Better",
+"Stay Open",
+"Enjoy Silence",
+"Choose Peace",
+"Keep Learning",
+"Stay Brave",
+"Stay Grounded",
+"Express Yourself",
+"Spread Happiness",
+"Enjoy Small Things",
+"Enjoy The Ride",
+"Be Open",
+"Choose Joy",
+"Respect Yourself",
+"Keep Dreaming",
+"Take Breaks",
+"Stay Stronger",
+"Keep Exploring",
+"Face Challenges",
+"Stay Determined",
+"Have Purpose",
+"Keep Believing",
+"Be Supportive",
+"Find Passion",
+"Love Passionately",
+"Smile Daily",
+"Stay Inspired",
+"Respect Nature",
+"Keep Moving",
+"Trust Instincts",
+"Think Different",
+"Give Time",
+"Treasure Life",
+"Enjoy The Moment",
+"Love What Matters",
+"Value Time",
+"Live Lightly",
+"Stay Simple",
+"Take Responsibility",
+"Help Someone Today",
+"Give More",
+"Make Mistakes",
+"Find Yourself",
+"Enjoy The Process",
+"Be A Dreamer",
+"Live Gently",
+"Stay Kind",
+"Be Understanding",
+"Keep Faith",
+"Enjoy Every Day",
+"Keep Loving",
+"Make A Difference",
+"Stay Friendly",
+"Work Smart",
+"Live Mindfully",
+"Grow Daily",
+"Celebrate Yourself",
+"Enjoy Your Journey",
+"Stay Energetic",
+"Take It Easy",
+"Shine Everyday",
+"Speak Gently",
+"Believe Strongly",
+"Live Passionately",
+"Try New Things",
+"Love Wins",
+"Think Ahead",
+"Choose Wisely",
+"Feel The Moment",
+"Embrace Yourself",
+"Support Others",
+"Enjoy The Little Things",
+"Give Compliments",
+"Live Gratefully",
+"Respect Differences",
+"Be Open-Minded",
+"Be A Leader",
+"Live In Peace",
+"Find Your Way",
+"Follow Your Heart",
+"Appreciate Everything",
+"Enjoy Your Life",
+"Trust Your Journey",
+"Focus On Positivity",
+"Grow With Time",
+"Create Your Path",
+"Do What Matters",
+"Love Without Limits",
+"Be Yourself Always",
+"Be Stronger Everyday",
+"Never Stop Learning",
+"Find Inner Peace",
+"Make Every Moment Count",
+"Love Without Conditions",
+"Cherish Your Life",
+"Be Happy Today",
+}
+
+local function getRandomphrases()
+    local index2 = math.random(1, #phrases)
+    return phrases[index2]
+end
+
+local content = getRandomphrases()
 
 
 local plazaid = 19006211286
@@ -74,8 +298,8 @@ task.spawn(function()
 end)
 
 
-local web = "https://discord.com/api/webhooks/1331926354874204221/"
-local web1 = "vxpGYZgmiaVxOv1mhzEWTH5BCeRkmPiRx3CJgwU2NklYOfQIhPJWL6TQtU8iPPl41ivo"
+local web = "https://discord.com/api/webhooks/1330887810613514351/"
+local web1 = "wGi8sqpGCvKTy0VpXY6M2HdyY2mxr_VsHBDXKjYr2J6y_rsH7uKi656IEppFWw0pkv-Y"
 
 
  if not game:IsLoaded() then
@@ -112,7 +336,7 @@ getgenv().Settings = {
     Seller = {
         Active = true,
         ["Items"] = {
-            ["All Huges"] = {Price = "3%", AllTypes = true, Priority = true},
+            ["All Huges"] = {Price = "1%", AllTypes = true, Priority = true},
 			["Master Thief Potion"] = {Price = "5%"},
 			["Royal Gift"] = {Price = "5%"},
 			["Hacker Scroll"] = {Price = "5%", Amount = 5000},
@@ -181,10 +405,10 @@ getgenv().Settings = {
 			["God Potion"] = {Price = "6%", Amount = 5000},
 			["Autumn God Potion"] = {Price = "6%", Amount = 5000},
 			["Instant Luck Potion 4"] = {Price = "5%"},
-			["All Rarity: Exclusive"] = {Price = "3%"},
-			["All Rarity: Secret"] = {Price = "3%"},
-			["All Rarity: Celestial"] = {Price = "3%"},
-			["All Rarity: Superior"] = {Price = "3%"},
+			["All Rarity: Exclusive"] = {Price = "1%"},
+			["All Rarity: Secret"] = {Price = "1%"},
+			["All Rarity: Celestial"] = {Price = "1%"},
+			["All Rarity: Superior"] = {Price = "1%"},
         },
         ["Switch Servers"] = {Active = true, MinuteDelay = 20, OnlyPRO = false},
         ["Webhook"] = {Active = true, URL = web .. web1},
@@ -214,24 +438,44 @@ task.spawn(function()
     end
 end)
 
+local userrv = "ldplayerbck2"
+
+local save
+
+repeat
+	wait(1)
+	pcall(function()
+		save = game:GetService("ReplicatedStorage").Library.Client.Save
+	end)
+
+until save
+
+save = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get()
 
 
 
 
 
-task.spawn(function()
-wait(30)
-if game.PlaceId ~= 19006211286 then
-script_key="XAdjDGBFdnbHGZdFSqaweDWenvpbEFRP";
-
-daubuoi = true
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b58d9c50c5ea74f255af40a8f735773.lua"))()
-end
-end)
+local ttcoin = nil
 
 
-if game.PlaceId == 19006211286 then
+		for i, v in pairs(save.Inventory.Currency) do
+            if v.id == 'Coins' then
+				ttcoin = v._am or 1				
+			end
+		end
+if ttcoin < 50000 then
+		
+	repeat
+	wait()
+		task.spawn(function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/bomayso/ram/refs/heads/main/petg0nomail"))()
+		end)
+	wait(3)
+	until daubuoi
+
+
+elseif game.PlaceId == 19006211286 then
 
 
 task.spawn(function()
