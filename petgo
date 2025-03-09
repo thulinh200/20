@@ -330,7 +330,9 @@ getgenv().Settings = {
     Seller = {
         Active = true,
         ["Items"] = {
-            ["All Huges"] = {Price = "1%", AllTypes = true, Priority = true},
+               ["All Huges"] = {Price = "1%", AllTypes = true, Priority = true},
+			["Chests"] = {Price = "5%"},
+			["Lightning"] = {Price = "5%"},
 			["Deep Sea Fishing Rod"] = {Price = "5%"},
 			["Atlantean Gift"] = {Price = "5%", Amount = 5000},
 			["Legendary Treasure Chest"] = {Price = "5%", Amount = 5000, Priority = true},
