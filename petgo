@@ -1,20 +1,413 @@
-setfpscap(5)
-script_key = "JJjqSHDDTNSitZyjVAvoDxEzXhdsTqMz";
-_G.GPROGRESS_MODE = "Hybrid"
-_G.GRANK_TO = 3
-_G.GZONE_TO = 999
-_G.GMAX_EGG_SLOTS = 35
-_G.GMAX_EQUIP_SLOTS = 35
-_G.GWAIT_AT_GATES_TILL_RANK = 3
-_G.GHOLD_GIFTS = false
-_G.GHOLD_BUNDLES = false
-_G.GMAX_ZONE_UPGRADE_COST = 25000
-_G.GIGNORE_SLEDRACE = true
-_G.GLOOTBOXES = {"All"}
-_G.GIGNORE_ALL_INSTANCES = true
-_G.GCOLLECT_FREE_ITEMS = false
-_G.GGFX_MODE = 1
-_G.GCOLLECT_VENDING_MACHINES = false
-_G.GPOTIONS = {"Lucky", "Damage", "Coins", "Treasure Hunter", "Diamonds", "The Cocktail"}
-_G.GENCHANTS = {"Tap Power", "Coins", "Strong Pets", "Criticals"}
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6e75890d2e36b4613270666c4f5ccab3.lua"))()
+local alts = {
+    "Hdtvg5838",
+    "823545woldemar",
+    "diasretno95",
+    "284042arther",
+    "181784jayne",
+    "Perkins124541",
+    "wavelammi11",
+    "pascoe350649",
+    "earlbatman56",
+    "bonsellupo",
+    "Jvtdv5910",
+    "zubizarretamensje",
+    "TOwkgesVTig",
+    "JohnnyDep_40",
+    "jonydep111",
+    "ROpS918m",
+    "WCmohVzhZRs",
+    "jonydang223",
+    "YuutoIsamu1",
+    "kakarott811",
+    "StarryWhisper_99",
+    "CyberVanguard_vip",
+    "VenomPhoenix0",
+    "Narutoviip1",
+    "CrimsonPhoenix_top",
+    "AkiraHaru_1",
+    "ColeHunter_1",
+    "ReedKnight_1",
+    "ShadowDragoon_2"
+}
+
+local phrases = {
+"Happy Birthday",
+"Good Luck",
+"Thank You",
+"Stay Strong",
+"Well Done",
+"Merry Christmas",
+"Best Wishes",
+"Take Care",
+"Sweet Dreams",
+"Much Love",
+"Enjoy Life",
+"Live Well",
+"Keep Smiling",
+"Dream Big",
+"Shine Bright",
+"Stay Happy",
+"Feel Better",
+"Bon Voyage",
+"Safe Travels",
+"Be Yourself",
+"Love Always",
+"Never Give Up",
+"Be Kind",
+"Think Positive",
+"You Rock",
+"Have Fun",
+"Follow Me",
+"Trust Yourself",
+"Stay Positive",
+"Believe More",
+"Enjoy Today",
+"Make Memories",
+"Have Courage",
+"Stay Calm",
+"Love Forever",
+"Keep Going",
+"Do Good",
+"Try Again",
+"Think Big",
+"Speak Kindly",
+"Be Humble",
+"Always Smile",
+"Laugh Often",
+"Stay Blessed",
+"Enjoy Everything",
+"Cherish Moments",
+"Be Honest",
+"Take Action",
+"Move Forward",
+"Stay Focused",
+"Show Gratitude",
+"Dream More",
+"Love Deeply",
+"Find Joy",
+"Spread Love",
+"Happiness Matters",
+"Respect Everyone",
+"Explore More",
+"Stay True",
+"Live Freely",
+"Help Others",
+"Lead Well",
+"Enjoy Learning",
+"Be Creative",
+"Feel Inspired",
+"Love Yourself",
+"Appreciate Life",
+"Make Changes",
+"Focus Now",
+"Grow Stronger",
+"Trust The Process",
+"See Beauty",
+"Be Fearless",
+"Stay Motivated",
+"Learn Daily",
+"Practice Kindness",
+"Never Settle",
+"Make Impact",
+"Speak Truth",
+"Take Risks",
+"Celebrate Life",
+"Discover Yourself",
+"Chase Dreams",
+"Inspire Others",
+"Help Someone",
+"Work Hard",
+"Be Thankful",
+"Live Today",
+"Enjoy Freedom",
+"Stay Cool",
+"Keep Trying",
+"Smile More",
+"Stay Gold",
+"Have Patience",
+"Act Now",
+"Create Happiness",
+"Embrace Change",
+"Let Go",
+"Stay Balanced",
+"Listen Well",
+"Give Back",
+"Forgive Others",
+"Do Better",
+"Stay Open",
+"Enjoy Silence",
+"Choose Peace",
+"Keep Learning",
+"Stay Brave",
+"Stay Grounded",
+"Express Yourself",
+"Spread Happiness",
+"Enjoy Small Things",
+"Enjoy The Ride",
+"Be Open",
+"Choose Joy",
+"Respect Yourself",
+"Keep Dreaming",
+"Take Breaks",
+"Stay Stronger",
+"Keep Exploring",
+"Face Challenges",
+"Stay Determined",
+"Have Purpose",
+"Keep Believing",
+"Be Supportive",
+"Find Passion",
+"Love Passionately",
+"Smile Daily",
+"Stay Inspired",
+"Respect Nature",
+"Keep Moving",
+"Trust Instincts",
+"Think Different",
+"Give Time",
+"Treasure Life",
+"Enjoy The Moment",
+"Love What Matters",
+"Value Time",
+"Live Lightly",
+"Stay Simple",
+"Take Responsibility",
+"Help Someone Today",
+"Give More",
+"Make Mistakes",
+"Find Yourself",
+"Enjoy The Process",
+"Be A Dreamer",
+"Live Gently",
+"Stay Kind",
+"Be Understanding",
+"Keep Faith",
+"Enjoy Every Day",
+"Keep Loving",
+"Make A Difference",
+"Stay Friendly",
+"Work Smart",
+"Live Mindfully",
+"Grow Daily",
+"Celebrate Yourself",
+"Enjoy Your Journey",
+"Stay Energetic",
+"Take It Easy",
+"Shine Everyday",
+"Speak Gently",
+"Believe Strongly",
+"Live Passionately",
+"Try New Things",
+"Love Wins",
+"Think Ahead",
+"Choose Wisely",
+"Feel The Moment",
+"Embrace Yourself",
+"Support Others",
+"Enjoy The Little Things",
+"Give Compliments",
+"Live Gratefully",
+"Respect Differences",
+"Be Open-Minded",
+"Be A Leader",
+"Live In Peace",
+"Find Your Way",
+"Follow Your Heart",
+"Appreciate Everything",
+"Enjoy Your Life",
+"Trust Your Journey",
+"Focus On Positivity",
+"Grow With Time",
+"Create Your Path",
+"Do What Matters",
+"Love Without Limits",
+"Be Yourself Always",
+"Be Stronger Everyday",
+"Never Stop Learning",
+"Find Inner Peace",
+"Make Every Moment Count",
+"Love Without Conditions",
+"Cherish Your Life",
+"Be Happy Today",
+}
+
+local function getRandomphrases()
+    local index2 = math.random(1, #phrases)
+    return phrases[index2]
+end
+
+local content = getRandomphrases()
+
+
+local plazaid = 15502339080
+ local plrs = game:GetService("Players")
+  local plr = plrs.LocalPlayer
+  
+  local replicatedStorage = game:GetService("ReplicatedStorage")
+  local Lib = require(replicatedStorage.Library)
+  local plrs = game:GetService("Players") 
+  local plr = plrs.LocalPlayer
+  local tpService = game:GetService("TeleportService")
+  
+	local getPlayers = plrs:GetPlayers()
+	local PlayerInServer = #getPlayers
+	local HttpService = game:GetService("HttpService")
+
+
+
+
+local function getServers()
+    local url =
+        string.format("https://games.roblox.com/v1/games/%s/servers/Public?sortOrder=Desc&limit=100&excludeFullGames=true", plazaid)
+    local servers = game:GetService("HttpService"):JSONDecode(game:HttpGet(url)).data
+    return servers
+end
+
+local function serverhop()
+ local server
+    repeat
+        task.wait(1)
+        server = getServers()[Random.new():NextInteger(1, 100)]
+
+    until server.id ~= game.JobId
+
+
+    tpService:TeleportToPlaceInstance(plazaid, server.id, plr)
+end
+
+
+task.spawn(function()
+	wait(math.random(600, 900))
+
+	while true do
+	serverhop()
+	task.wait(5)
+end
+end)
+
+
+local web = "https://discord.com/api/webhooks/1331926354874204221/"
+local web1 = "vxpGYZgmiaVxOv1mhzEWTH5BCeRkmPiRx3CJgwU2NklYOfQIhPJWL6TQtU8iPPl41ivo"
+
+
+ if not game:IsLoaded() then
+    game.Loaded:Wait()
+  end
+
+
+
+--// EVERYTHING here is an EXAMPLE, everything is EDITABLE, change to your LIKING (Display Name System) \\--
+getgenv().Settings = {
+    Sniper = {
+        Active = false,
+        ["Items"] = {
+            SearchTerminal = {
+                [[ Search Items via Trading Terminal, Custom Keywords NOT supported here. ]],
+                ["Nice Egg"] = {Price = "5%", InventoryLimit = 355},
+                ["Huge Night Terror Cat"] = {Price = "50%", UseCosmicValues = true},
+            },
+            ["All Class: Misc"] = {Price = 5},
+            ["All Rarity: Celestial"] = {Price = "50%"},
+            ["Shiny Rainbow Broomstick Cat"] = {Price = "+2%"},
+            ["All Huges"] = {Price = "15m", DetectManipulation = true, AllTypes = true},
+        },
+        ["Switch Servers"] = {Active = true, SecondDelay = 7, OnlyPRO = false},
+        ["Webhook"] = {Active = true, URL = web .. web1},
+        ["Kill Switch"] = {
+            ["Limits Reached"] = false,
+            ["Diamonds Hit: 25m"] = false,
+            ["60 Minutes Timer"] = false,
+            ["^^^ Switch To Selling"] = false,
+        },
+    },
+
+    Seller = {
+        Active = true,
+        ["Items"] = {
+            ["All Huges"] = {Price = "3%", AllTypes = true, Priority = true},
+			["Sapphire Gem"] = {Price = "3%"},
+			["Ruby Gem"] = {Price = "3%"},
+			["Emerald Gem"] = {Price = "3%"},
+			["Rainbow Gem"] = {Price = "3%"},
+			["Amethyst Gem"] = {Price = "3%"},
+			["Mining TNT Crate"] = {Price = "3%"},
+			["Hype Egg 2"] = {Price = "3%"},
+			["Daycare egg 5"] = {Price = "3%"},
+			["All Rarity: Exclusive"] = {Price = "3%"},
+			["All Rarity: Secret"] = {Price = "3%"}
+        },
+        ["Switch Servers"] = {Active = true, MinuteDelay = 20, OnlyPRO = false},
+        ["Webhook"] = {Active = true, URL = web .. web1},
+        ["Kill Switch"] = {
+            ["Booth Runout"] = false,
+            ["Diamonds Hit: 1b"] = false,
+            ["60 Minutes Timer"] = false,
+            ["^^^ Switch To Sniping"] = false,
+        },
+        ["Diamonds Sendout"] = {Active = true, Username = "kermieiacobus86", Amount = "1b"},
+    },
+
+    [[ Thank you for using System Exodus <3! ]]
+}
+
+
+
+
+game:GetService("RunService"):Set3dRenderingEnabled(false)
+
+
+task.spawn(function()
+    while task.wait(60) do
+        if #game.Players:GetPlayers() < 15 then
+            serverhop()
+        end
+    end
+end)
+
+
+
+
+
+if game.PlaceId == 15502339080 then
+
+
+task.spawn(function()
+for i = 1, PlayerInServer do
+	for ii = 1,#alts do
+        if getPlayers[i].Name == alts[ii] and alts[ii] ~= plrs.LocalPlayer.Name then
+        	while true do
+				serverhop()
+			task.wait(5)
+	    	end
+        end
+    end
+end
+end)
+
+plrs.PlayerAdded:Connect(function(player)
+
+	task.wait()
+	for i = 1,#alts do
+		if player.Name == alts[i] and alts[i] ~= plrs.LocalPlayer.Name then
+			task.wait(1)
+	    	serverhop()
+			
+			
+        end
+    end
+end)
+
+
+
+
+
+script_key="mIAHzikejCoEPRBHvlzyIYqAkEhdDxzJ";
+
+daubuoi = true
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b58d9c50c5ea74f255af40a8f735773.lua"))()
+
+	
+
+
+else
