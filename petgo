@@ -1,3 +1,4 @@
+setfpscap(5)
 script_key = "JJjqSHDDTNSitZyjVAvoDxEzXhdsTqMz";
 _G.GPROGRESS_MODE = "Hybrid"
 _G.GRANK_TO = 3
