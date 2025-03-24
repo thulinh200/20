@@ -411,3 +411,13 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b58d9c50c5ea7
 
 
 else
+
+daubuoi = true
+
+while true do
+	
+	serverhop()
+	wait(5)
+end
+
+end
